@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
+docker build -t customrf .
+
 docker run \
   --rm \
-  --volume "$PWD/tests":/home/robot/tests \
-  --volume "$PWD/results":/home/robot/results \
-  robotframework/rfdocker:latest \
+  --volume "$PWD":/home/robot/ \
+  customrf:latest \
+  --variablefile "env/$ENV.yaml" \
   tests

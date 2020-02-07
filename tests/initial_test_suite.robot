@@ -1,6 +1,9 @@
+*** Variables ***
+${main page}  ${SUT.baseurl}/index.php
+
 *** Test Cases ***
 Search and verify result breadcrumb
-	Open web page http://automationpractice.com/index.php
+	Open web page ${main page}
 	Search for "dress"
 	Remember title of 1st search result item
 	Open 1st search result
@@ -8,9 +11,9 @@ Search and verify result breadcrumb
 	Verify that the breadcrumb contains the same name as the 1st search result title
 
 *** Keywords ***
-Open web page http://automationpractice.com/index.php
+Open web page ${url}
 	[Tags]  not yet ready
-	No operation
+	Log  ${url}
   
 Search for "dress"
 	[Tags]  not yet ready
