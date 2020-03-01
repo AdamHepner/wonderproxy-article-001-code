@@ -1,5 +1,5 @@
 *** Keywords ***
-Verify that the breadcrumb contains the same name as the ${number:\d+}. search result title
+Verify that the breadcrumb contains the same product name as the title of search result number ${number:\d+}
     [Tags]  not yet ready
     Log  ${number}
 

@@ -11,10 +11,10 @@ ${main page}  ${SUT.baseurl}/index.php
 Search and verify result breadcrumb
 	Open web page ${main page}
 	main_page.Search for "dress"
-	search_results.Remember title of 1. search result item
-	search_results.Open 1. search result
+	search_results.Remember title of search result item number 1
+	search_results.Open search result number 1
 	product_page.Verify that a product page is now open
-	product_page.Verify that the breadcrumb contains the same name as the 1. search result title
+	product_page.Verify that the breadcrumb contains the same product name as the title of search result number 1
 
 *** Keywords ***
 Open web page ${url}

@@ -1,9 +1,9 @@
 *** Keywords ***
-Remember title of ${number:\d+}. search result item
+Remember title of search result item number ${number:\d+}
 	[Tags]  not yet ready
 	[Documentation]  Extract a value from the webpage and make it available in the remainder of the test
 	Log  ${number}
 
-Open ${number:\d+}. search result
+Open search result number ${number:\d+}
 	[Tags]  not yet ready
 	Log  ${number}
